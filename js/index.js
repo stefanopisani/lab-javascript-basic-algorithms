@@ -38,7 +38,22 @@ console.log(reverseName);
 // 3.3
 
 
-// for (let i = 0; i < hacker2.length; i++) {
+//for (let i = 0; i < hacker2.length; i++) {
+if (hacker1[0] < hacker2[0]) {
+    console.log('The drivers name goes first');
+} else if (hacker1[0] === hacker2[0]) {
+    console.log('What?! You both have the same name?');
+} else {
+    console.log('Yo, the navigator goes first definitely.');
+}
+//}
+
+
+// let names = [hacker1, hacker2];
+// a = names.sort((a, b) => a.localeCompare(b));
+// console.log(names)
+
+// for (let i = 0; i < names; i++) {
 //     if (hacker1[i] < hacker2[i]) {
 //         console.log('The drivers name goes first');
 //     } else if (hacker1[i] === hacker2[i]) {
@@ -47,18 +62,3 @@ console.log(reverseName);
 //         console.log('Yo, the navigator goes first definitely.');
 //     }
 // }
-
-
-let names = [hacker1, hacker2];
-a = names.sort((a, b) => a.localeCompare(b));
-console.log(names)
-
-for (let i = 0; i < names; i++) {
-    if (hacker1[i] < hacker2[i]) {
-        console.log('The drivers name goes first');
-    } else if (hacker1[i] === hacker2[i]) {
-        console.log('What?! You both have the same name?');
-    } else {
-        console.log('Yo, the navigator goes first definitely.');
-    }
-}
